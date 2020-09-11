@@ -1,0 +1,88 @@
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #161415 url(../images/background.jpg) no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+
+header .banner {
+  height: 100vh;
+  display: flex;
+}
+
+header .banner-text {
+    margin: auto; 
+}
+
+header .banner-text h1 {
+  font: 90px "opensans-bold", sans-serif;
+  color: #fff;
+  margin: 0 auto 15px auto;
+}
+
+header .banner-text h3 {
+  font: 18px/1.9em "librebaskerville-regular", serif;
+  color: #a8a8a8;
+}
+
+header .banner-networks {
+    display: flex; 
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+header .banner-networks li {
+    margin: 0 5px;
+}
+
+header .banner-networks li svg {
+    font-size: 32px;
+    color: #fff;
+}
+
+header .banner-networks li svg:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-out;
+}
+
+.nav-wrap ul,
+.nav-wrap li,
+.nav-wrap a {
+  padding: 0;
+}
+
+.nav-wrap {
+  font: 12px "opensans-bold", sans-serif;
+  width: 100%;
+  letter-spacing: 2.5px;
+  z-index: 100;
+  position: fixed;
+}
+
+.opaque {
+  background-color: #333;
+}
+
+.nav {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+}
+
+.nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+.nav li a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 13px;
+  line-height: 32px;
+  color: #fff;
+}
