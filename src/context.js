@@ -8,6 +8,7 @@ class DataProvider extends Component {
     name: "",
     role: "",
     info: "",
+    picture: "",
     networks: [],
   };
 
@@ -16,12 +17,14 @@ class DataProvider extends Component {
     let name = items.about.name;
     let role = items.about.role;
     let info = items.about.info;
+    let picture = items.about.picture;
     let networks = items.about.networks;
 
     this.setState({
       name,
       role,
       info,
+      picture,
       networks,
     });
   }

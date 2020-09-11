@@ -1,11 +1,13 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import photo from "./images/photo.png";
 
 export default {
   about: {
     name: "Julie Hauptmann",
-    role: "étudiante en Master Informatique",
+    role: "Étudiante en Master Informatique",
     info: "recherche un stage de 4 à 6 mois",
+    picture: photo,
     networks: [
       {
         name: "Linkedin",

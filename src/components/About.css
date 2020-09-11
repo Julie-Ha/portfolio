@@ -1,0 +1,18 @@
+#about {
+  padding: 5rem 2rem;
+  background-color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  padding: 0 3rem;
+}
+
+.about-text p {
+  color: #fff;
+}
