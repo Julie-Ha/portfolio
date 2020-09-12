@@ -10,6 +10,7 @@ class DataProvider extends Component {
     info: "",
     picture: "",
     networks: [],
+    projects: [],
   };
 
   // getData
@@ -19,6 +20,7 @@ class DataProvider extends Component {
     let info = items.about.info;
     let picture = items.about.picture;
     let networks = items.about.networks;
+    let projects = items.projects;
 
     this.setState({
       name,
@@ -26,6 +28,7 @@ class DataProvider extends Component {
       info,
       picture,
       networks,
+      projects,
     });
   }
 
