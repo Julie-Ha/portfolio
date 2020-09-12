@@ -1,0 +1,43 @@
+.skills {
+  padding: 4rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.skills-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.frontend-container,
+.backend-container {
+  margin: 1rem;
+}
+
+.frontend-container {
+    margin-top: 2rem;
+}
+
+.frontend-container ul,
+.backend-container ul {
+    display: flex;
+}
+
+.frontend-container li,
+.backend-container li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.frontend-container li p,
+.backend-container li p {
+    margin: 0.5rem;
+}
+
+.frontend-container li svg,
+.backend-container li svg {
+    font-size: 40px;
+}

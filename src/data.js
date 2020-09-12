@@ -1,5 +1,14 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import {
+  FaCss3Alt,
+  FaSass,
+  FaBootstrap,
+  FaJs,
+  FaReact,
+  FaPhp,
+  FaSymfony,
+} from "react-icons/fa";
 import photo from "./images/photo.png";
 import img1 from "./images/claw_machine.png";
 import img2 from "./images/image_filter.png";
@@ -51,4 +60,47 @@ export default {
       source: "https://github.com/Julie-Ha/MyBooks",
     },
   ],
+  skills: {
+    css: [
+      {
+        id: 1,
+        name: "CSS",
+        icon: <FaCss3Alt  style={{color: "#254BDD"}} />,
+      },
+      {
+        id: 2,
+        name: "Sass",
+        icon: <FaSass style={{color: "#C56494"}} />,
+      },
+      {
+        id: 3,
+        name: "Bootstrap",
+        icon: <FaBootstrap style={{color: "#563484"}} />,
+      },
+    ],
+    javascript: [
+      {
+        id: 1,
+        name: "Javascript",
+        icon: <FaJs style={{color: "#EFD81D"}} />,
+      },
+      {
+        id: 2,
+        name: "React",
+        icon: <FaReact style={{color: "#70D8F4"}} />,
+      },
+    ],
+    backend: [
+      {
+        id: 1,
+        name: "PHP",
+        icon: <FaPhp style={{color: "#7377AD"}} />,
+      },
+      {
+        id: 2,
+        name: "Symfony",
+        icon: <FaSymfony />,
+      },
+    ],
+  },
 };

@@ -11,6 +11,9 @@ class DataProvider extends Component {
     picture: "",
     networks: [],
     projects: [],
+    cssSkills: [],
+    jsSkills: [],
+    backendSkills: [],
   };
 
   // getData
@@ -21,6 +24,9 @@ class DataProvider extends Component {
     let picture = items.about.picture;
     let networks = items.about.networks;
     let projects = items.projects;
+    let cssSkills = items.skills.css;
+    let jsSkills = items.skills.javascript;
+    let backendSkills = items.skills.backend;
 
     this.setState({
       name,
@@ -29,6 +35,9 @@ class DataProvider extends Component {
       picture,
       networks,
       projects,
+      cssSkills,
+      jsSkills,
+      backendSkills,
     });
   }
 

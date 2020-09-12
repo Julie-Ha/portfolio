@@ -4,7 +4,7 @@ function ProjectCard({project}) {
   return (
     <>
       <li className='cards-item'>
-        <a className='cards-item-link' href={project.link}>
+        <a className='cards-item-link' href={project.link} target="_blank" rel="noopener noreferrer">
           <figure className='cards-item-pic-wrap' data-category={project.name}>
             <img
               className='cards-item-img'

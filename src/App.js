@@ -12,6 +12,7 @@ function App() {
       <Header />
       <About />
       <Projects />
+      <hr/>
       <Skills />
       <Footer />
     </div>
