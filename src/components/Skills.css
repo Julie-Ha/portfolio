@@ -1,5 +1,4 @@
 .skills {
-  height: 100vh;
   background-color: #fff;
   padding: 4rem;
 }
@@ -47,7 +46,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
   .skills {
-    padding: 2rem;
+    padding:  4rem 2rem 2rem 2rem;
   }
 
   .frontend-container li svg,

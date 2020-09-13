@@ -1,7 +1,7 @@
 .projects {
-  height: 100vh;
+  height: 85vh;
   padding: 4rem;
-  background: #EBEEEE;
+  background: #ebeeee;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
   align-items: center;
   max-width: 1120px;
   width: 90%;
-  margin: 0 auto;
+  margin: 3rem auto auto auto;
 }
 
 .cards-wrapper {
@@ -97,11 +97,6 @@ h1 {
   line-height: 24px;
 }
 
-@media only screen and (min-width: 1200px) {
-  .content-blog-container {
-    width: 84%;
-  }
-}
 
 @media only screen and (min-width: 1024px) {
   .cards-items {
@@ -112,5 +107,17 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .cards-item {
     margin-bottom: 2rem;
+  }
+  .projects {
+    height: 100%;
+    padding: 4rem 2rem 2rem 2rem;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto auto auto;
   }
 }

@@ -16,3 +16,11 @@
 .about-text p {
   color: #fff;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .about-text p {
+    font-size: 12px;
+    font-weight: 100;
+  }
+}
