@@ -14,6 +14,7 @@ class DataProvider extends Component {
     cssSkills: [],
     jsSkills: [],
     backendSkills: [],
+    drawings: [],
   };
 
   // getData
@@ -27,6 +28,7 @@ class DataProvider extends Component {
     let cssSkills = items.skills.css;
     let jsSkills = items.skills.javascript;
     let backendSkills = items.skills.backend;
+    let drawings = items.drawings;
 
     this.setState({
       name,
@@ -38,6 +40,7 @@ class DataProvider extends Component {
       cssSkills,
       jsSkills,
       backendSkills,
+      drawings,
     });
   }
 

@@ -41,6 +41,8 @@ header .banner-networks li {
 header .banner-networks li svg {
   font-size: 32px;
   color: #fff;
+  transform: scale(1.0);
+  transition: 0.3s ease-out;
 }
 
 header .banner-networks li svg:hover {

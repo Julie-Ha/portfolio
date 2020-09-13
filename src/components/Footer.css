@@ -1,3 +1,35 @@
 footer {
-    background-color: #191919;
+  background-color: #191919;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #303030;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-networks {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-networks li {
+  margin: 0 5px;
+}
+
+.footer-networks li svg {
+  font-size: 32px;
+  color: #525252;
+  transform: scale(1.0);
+  transition: 0.3s ease-out;
+}
+
+.footer-networks li svg:hover {
+  transform: scale(1.2);
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+
+footer p {
+    margin-top: 1rem;
 }

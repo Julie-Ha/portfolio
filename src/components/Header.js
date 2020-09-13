@@ -33,6 +33,9 @@ function Header() {
           <li>
             <a href="#skills">Compétences</a>
           </li>
+          <li>
+            <a href="#drawings">Dessins</a>
+          </li>
         </ul>
       </nav>
 

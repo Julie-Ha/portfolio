@@ -1,4 +1,6 @@
 .skills {
+  height: 100vh;
+  background-color: #fff;
   padding: 4rem;
 }
 
@@ -17,27 +19,39 @@ h1 {
 }
 
 .frontend-container {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .frontend-container ul,
 .backend-container ul {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .frontend-container li,
 .backend-container li {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
 .frontend-container li p,
 .backend-container li p {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .frontend-container li svg,
 .backend-container li svg {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .skills {
+    padding: 2rem;
+  }
+
+  .frontend-container li svg,
+  .backend-container li svg {
+    font-size: 20px;
+  }
 }
