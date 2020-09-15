@@ -1,10 +1,12 @@
 .skills {
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 4rem;
+  color: #007F68;
 }
 
-h1 {
+.skills h1 {
   text-align: center;
+  color: #007F68;
 }
 
 .skills-container {
@@ -42,6 +44,7 @@ h1 {
 .frontend-container li svg,
 .backend-container li svg {
   font-size: 40px;
+  color: #F7931E;
 }
 
 @media screen and (max-width: 800px) {

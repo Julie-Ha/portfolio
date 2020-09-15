@@ -1,12 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { DataContext } from "../context";
 import "./Header.css";
 import { Link } from "react-scroll";
 
 function Header() {
-  const context = useContext(DataContext);
-  const { name, role, networks } = context;
+  // const context = useContext(DataContext);
+  // const { name, role, networks } = context;
   const [nav, setNav] = useState(false);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(false);
@@ -19,7 +18,7 @@ function Header() {
     } else {
       setNav(false);
     }
-    if (window.scrollY >= 700) {
+    if (window.scrollY >= 350) {
       setButton(true);
     } else {
       setButton(false);
@@ -32,7 +31,7 @@ function Header() {
     <header id="home">
       <nav className={nav ? "nav-wrap active" : "nav-wrap"}>
         <div
-          className={button ? "menu-icon dark" : "menu-icon light"}
+          className={button ? "menu-icon light" : "menu-icon dark"}
           onClick={handleClick}
         >
           {click ? <FaTimes /> : <FaBars />}
@@ -94,7 +93,7 @@ function Header() {
               Compétences
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               className="nav-link"
               activeClass="active"
@@ -107,12 +106,12 @@ function Header() {
             >
               Dessins
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 
       <div className="banner">
-        <div className="banner-text">
+        {/* <div className="banner-text">
           <h1>Bienvenue</h1>
           <h3>
             Je suis {name}, {role}
@@ -128,7 +127,7 @@ function Header() {
               );
             })}
           </ul>
-        </div>
+        </div> */}
       </div>
     </header>
   );

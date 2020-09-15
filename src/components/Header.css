@@ -2,8 +2,8 @@ header {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: #161415 url(../images/background.jpg) no-repeat top center;
-  background-size: cover;
+  background: #fff url(../images/background.png) no-repeat top center;
+  background-size: contain;
   text-align: center;
   overflow: hidden;
 }
@@ -60,8 +60,16 @@ header .banner-networks li svg:hover {
 }
 
 .nav-wrap.active {
-  background: #333;
+  background: #007F68;
   transition: 0.5s ease-out;
+}
+
+.nav-wrap.active .nav-link {
+  color: #fff;
+}
+
+.nav-wrap.active .nav-link:hover{
+  color: #F7931E;
 }
 
 .nav-menu {
@@ -77,16 +85,21 @@ header .banner-networks li svg:hover {
   display: inline-block;
 }
 
-.nav-menu li a {
+.nav-link {
   display: inline-block;
   font-size: 16px;
   padding: 8px 13px;
   line-height: 32px;
-  color: #fff;
+  color: #007F68;
 }
 
 .nav-link {
   cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #F7931E;
+  transition: 0.2s;
 }
 
 .menu-icon {
@@ -94,6 +107,9 @@ header .banner-networks li svg:hover {
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    height: 50vh;
+  }
   header .banner-text h1 {
     font-size: 60px;
   }
@@ -136,11 +152,15 @@ header .banner-networks li svg:hover {
   }
 
   .menu-icon.dark svg {
-    color: #000;
+    color: #007F68;
     transition: 0.5s ease;
   }
   .menu-icon.light svg {
     color: #fff;
     transition: 0.5s ease;
+  }
+
+  .nav-link {
+    color: #fff;
   }
 }

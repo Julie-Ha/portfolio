@@ -3,13 +3,13 @@ import { DataContext } from "../context";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 
-function Projects() {
+const Projects = React.forwardRef((props, ref) => {
   const context = useContext(DataContext);
   const { projects } = context;
 
   return (
-    <section className="projects" id="projects">
-        <h1>Quelques projets personnels</h1>
+    <section className="projects" id="projects" ref={ref}>
+        <h1>Projets personnels</h1>
         <div className="cards-container">
           <div className="cards-wrapper">
             <ul className="cards-items">
@@ -21,6 +21,6 @@ function Projects() {
         </div>
     </section>
   );
-}
+})
 
 export default Projects;

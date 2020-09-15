@@ -1,11 +1,12 @@
 .projects {
   height: 85vh;
   padding: 4rem;
-  background: #ebeeee;
+  background: #2CB978;
 }
 
-h1 {
+.projects h1 {
   text-align: center;
+  color: #fff;
 }
 
 .cards-container {
@@ -37,7 +38,7 @@ h1 {
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(52, 56, 56, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   text-decoration: none;
 }
@@ -64,7 +65,7 @@ h1 {
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background-color: #1188ad;
+  background-color: #F7931E;
   box-sizing: border-box;
 }
 
@@ -92,7 +93,7 @@ h1 {
 }
 
 .cards-item-text {
-  color: #252e48;
+  color: #007F68;
   font-size: 18px;
   line-height: 24px;
 }
@@ -117,7 +118,7 @@ h1 {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin: 1rem auto auto auto;
   }
 }

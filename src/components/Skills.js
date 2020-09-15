@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import { DataContext } from "../context";
 import "./Skills.css";
 
-function Skills() {
+const Skills = React.forwardRef((props, ref) => {
   const context = useContext(DataContext);
   const { cssSkills, jsSkills, backendSkills } = context;
 
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="skills" ref={ref}>
       <h1>Compétences</h1>
 
       <div className="skills-container">
@@ -54,6 +54,6 @@ function Skills() {
       </div>
     </section>
   );
-}
+})
 
 export default Skills;

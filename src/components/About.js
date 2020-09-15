@@ -2,11 +2,11 @@ import React, { useContext } from "react";
 import { DataContext } from "../context";
 import "./About.css";
 
-function About() {
+const About = React.forwardRef((props, ref) => {
   const context = useContext(DataContext);
   const { name, role, info, picture } = context;
   return (
-    <section id="about">
+    <section id="about" ref={ref}>
       <img className="picture" src={picture} alt="profil-pic" />
       <div className="about-text">
         <p>{name}</p>
@@ -14,6 +14,6 @@ function About() {
       </div>
     </section>
   );
-}
+});
 
 export default About;
