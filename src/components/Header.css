@@ -2,15 +2,23 @@ header {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: #fff url(../images/background.png) no-repeat top center;
-  background-size: contain;
+  /* background: #fff url(../images/background.png) no-repeat top center;
+  background-size: contain; */
   text-align: center;
   overflow: hidden;
+}
+
+.computer-img {
+  height: 70%;
+  opacity: 0;
+  transform: scale(0.0);
 }
 
 header .banner {
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .banner-text {
@@ -110,6 +118,12 @@ header .banner-networks li svg:hover {
   header {
     height: 50vh;
   }
+
+  header .banner {
+    height: 50vh;
+  }
+
+
   header .banner-text h1 {
     font-size: 60px;
   }

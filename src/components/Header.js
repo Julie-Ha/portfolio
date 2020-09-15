@@ -1,16 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.css";
 import { Link } from "react-scroll";
+import computerImg from '../images/computer.png';
+
+import { TweenMax, Power3 } from 'gsap';
 
 function Header() {
-  // const context = useContext(DataContext);
-  // const { name, role, networks } = context;
   const [nav, setNav] = useState(false);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  let logoComputer = useRef(null);
+
+  useEffect(() => {
+    TweenMax.to(
+      logoComputer,
+      .9,
+      {
+        opacity: 1,
+        scale:1,
+        ease: Power3.easeOut
+      }
+    )
+  }, [])
 
   const changeBackground = () => {
     if (window.scrollY >= 160) {
@@ -111,6 +125,7 @@ function Header() {
       </nav>
 
       <div className="banner">
+        <img src={computerImg} alt="computer" className="computer-img" ref={el => {logoComputer = el}}/>
         {/* <div className="banner-text">
           <h1>Bienvenue</h1>
           <h3>
