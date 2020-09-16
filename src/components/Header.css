@@ -11,7 +11,7 @@ header {
 .computer-img {
   height: 70%;
   opacity: 0;
-  transform: scale(0.0);
+  transform: scale(0);
 }
 
 header .banner {
@@ -19,43 +19,6 @@ header .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-header .banner-text {
-  margin: auto;
-}
-
-header .banner-text h1 {
-  font-size: 90px;
-  color: #fff;
-  margin: 0 auto 15px auto;
-}
-
-header .banner-text h3 {
-  font: 18px;
-  color: #a8a8a8;
-}
-
-header .banner-networks {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-header .banner-networks li {
-  margin: 0 5px;
-}
-
-header .banner-networks li svg {
-  font-size: 32px;
-  color: #fff;
-  transform: scale(1);
-  transition: 0.3s ease-out;
-}
-
-header .banner-networks li svg:hover {
-  transform: scale(1.2);
-  transition: 0.3s ease-out;
 }
 
 .nav-wrap {
@@ -68,7 +31,7 @@ header .banner-networks li svg:hover {
 }
 
 .nav-wrap.active {
-  background: #007F68;
+  background: #007f68;
   transition: 0.5s ease-out;
 }
 
@@ -76,8 +39,8 @@ header .banner-networks li svg:hover {
   color: #fff;
 }
 
-.nav-wrap.active .nav-link:hover{
-  color: #F7931E;
+.nav-wrap.active .nav-link:hover {
+  color: #f7931e;
 }
 
 .nav-menu {
@@ -98,7 +61,7 @@ header .banner-networks li svg:hover {
   font-size: 16px;
   padding: 8px 13px;
   line-height: 32px;
-  color: #007F68;
+  color: #007f68;
 }
 
 .nav-link {
@@ -106,12 +69,43 @@ header .banner-networks li svg:hover {
 }
 
 .nav-link:hover {
-  color: #F7931E;
+  color: #f7931e;
   transition: 0.2s;
 }
 
 .menu-icon {
   display: none;
+}
+
+.icon1 {
+  color: #f7931e;
+  font-size: 50px;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.icon2 {
+  display: flex;
+  color: #00A99D;
+  font-size: 50px;
+  position: absolute;
+  top: 75%;
+  right: 65%;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.icon3 {
+  color: #F15A24;
+  font-size: 50px;
+  position: absolute;
+  top: 18%;
+  right: 52%;
+  transform: scale(0);
+  opacity: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -121,15 +115,6 @@ header .banner-networks li svg:hover {
 
   header .banner {
     height: 50vh;
-  }
-
-
-  header .banner-text h1 {
-    font-size: 60px;
-  }
-
-  header .banner-text h3 {
-    font-size: 18px;
   }
 
   .nav-menu {
@@ -166,7 +151,7 @@ header .banner-networks li svg:hover {
   }
 
   .menu-icon.dark svg {
-    color: #007F68;
+    color: #007f68;
     transition: 0.5s ease;
   }
   .menu-icon.light svg {
@@ -176,5 +161,9 @@ header .banner-networks li svg:hover {
 
   .nav-link {
     color: #fff;
+  }
+
+  .icon1, .icon2, .icon3 {
+    font-size: 25px;
   }
 }

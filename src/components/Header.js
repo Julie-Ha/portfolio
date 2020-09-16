@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { VscCode } from "react-icons/vsc";
+import { AiFillHeart, AiFillSetting } from "react-icons/ai";
 import "./Header.css";
 import { Link } from "react-scroll";
-import computerImg from '../images/computer.png';
+import computerImg from "../images/computer.png";
 
-import { TweenMax, Power3 } from 'gsap';
+import { gsap, Power3, Linear, } from "gsap";
 
 function Header() {
   const [nav, setNav] = useState(false);
@@ -13,18 +15,69 @@ function Header() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   let logoComputer = useRef(null);
+  let icon1 = useRef(null);
+  let icon2 = useRef(null);
+  let icon3 = useRef(null);
 
   useEffect(() => {
-    TweenMax.to(
-      logoComputer,
-      .9,
+    let tl = new gsap.timeline();
+
+    tl.to(logoComputer, {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      ease: Power3.easeOut,
+    });
+
+    tl.to(icon1, {
+      scale: 1,
+      opacity: 1,
+      ease: Power3.easeOut,
+    });
+    gsap.fromTo(
+      icon1,
       {
-        opacity: 1,
-        scale:1,
-        ease: Power3.easeOut
+        y: 10,
+      },
+      {
+        y: 0,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
       }
-    )
-  }, [])
+    );
+
+    tl.to(icon2, {
+      scale: 1,
+      opacity: 1,
+      ease: Power3.easeOut,
+    });
+    gsap.to(icon2, {
+      rotation: "360",
+      duration: 3,
+      ease: Linear.easeNone,
+      repeat: -1,
+    });
+
+    tl.to(icon3, {
+      opacity: 1,
+      ease: Power3.easeOut,
+    });
+    gsap.fromTo(
+      icon3,
+      {
+        scale: 0.9,
+      },
+      {
+        scale: 1.1,
+        repeat: -1,
+        //ease: RoughEase.ease,
+        //ease: Elastic.easeOut,
+        //ease: Elastic.easeOut.config(1.75, 1),
+        yoyo: true,
+      }
+    );
+  }, []);
 
   const changeBackground = () => {
     if (window.scrollY >= 160) {
@@ -125,24 +178,21 @@ function Header() {
       </nav>
 
       <div className="banner">
-        <img src={computerImg} alt="computer" className="computer-img" ref={el => {logoComputer = el}}/>
-        {/* <div className="banner-text">
-          <h1>Bienvenue</h1>
-          <h3>
-            Je suis {name}, {role}
-          </h3>
-          <ul className="banner-networks">
-            {networks.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    {item.icon}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div> */}
+        <img
+          src={computerImg}
+          alt="computer"
+          className="computer-img"
+          ref={(el) => (logoComputer = el)}
+        />
+        <div className="icon1" ref={(el) => (icon1 = el)}>
+          <VscCode />
+        </div>
+        <div className="icon2" ref={(el) => (icon2 = el)}>
+          <AiFillSetting />
+        </div>
+        <div className="icon3" ref={(el) => (icon3 = el)}>
+          <AiFillHeart />
+        </div>
       </div>
     </header>
   );

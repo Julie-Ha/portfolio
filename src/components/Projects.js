@@ -8,13 +8,13 @@ const Projects = React.forwardRef((props, ref) => {
   const { projects } = context;
 
   return (
-    <section className="projects" id="projects" ref={ref}>
+    <section className="projects" id="projects">
         <h1>Projets personnels</h1>
         <div className="cards-container">
           <div className="cards-wrapper">
-            <ul className="cards-items">
+            <ul className="cards-items" ref={ref}>
               {projects.map((item, index) => {
-                return <ProjectCard project={item} key={index} />;
+                return <ProjectCard project={item} key={index}  />;
               })}
             </ul>
           </div>

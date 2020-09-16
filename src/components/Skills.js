@@ -7,10 +7,10 @@ const Skills = React.forwardRef((props, ref) => {
   const { cssSkills, jsSkills, backendSkills } = context;
 
   return (
-    <section id="skills" className="skills" ref={ref}>
+    <section id="skills" className="skills">
       <h1>Compétences</h1>
 
-      <div className="skills-container">
+      <div className="skills-container" ref={ref}>
         <div className="frontend-container">
           <h3>Front-end</h3>
 

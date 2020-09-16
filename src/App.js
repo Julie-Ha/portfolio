@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 // import Drawings from "./components/Drawings";
-import { gsap } from "gsap";
+import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,23 +19,22 @@ function App() {
     revealRefs.current.push(el);
   };
 
-  console.log(revealRefs);
-
   useEffect(() => {
     revealRefs.current.forEach((el, index) => {
       gsap.fromTo(
         el,
         {
-          autoAlpha: 0,
+          scale: 0,
         },
         {
           duration: 1,
-          autoAlpha: 1,
-          ease: "none",
+          opacity: 1,
+          scale: 1,
+          ease: Power3.easeOut,
           scrollTrigger: {
             id: `section-${index + 1}`,
             trigger: el,
-            start: "top bottom",
+            start: "start bottom",
             toggleActions: "play none none reverse",
             markers: true,
           },
