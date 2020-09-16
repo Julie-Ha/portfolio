@@ -2,8 +2,6 @@ header {
   position: relative;
   height: 100vh;
   width: 100%;
-  /* background: #fff url(../images/background.png) no-repeat top center;
-  background-size: contain; */
   text-align: center;
   overflow: hidden;
 }
@@ -61,11 +59,9 @@ header .banner {
   font-size: 16px;
   padding: 8px 13px;
   line-height: 32px;
-  color: #007f68;
-}
-
-.nav-link {
   cursor: pointer;
+  color: #007f68;
+  transition: 0.2s;
 }
 
 .nav-link:hover {

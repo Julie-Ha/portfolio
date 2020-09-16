@@ -25,6 +25,7 @@
 
 .cards-items {
   margin-bottom: 24px;
+  opacity: 0;
 }
 
 .cards-item {
@@ -32,13 +33,15 @@
   flex: 1;
   margin: 0 1rem;
   background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .cards-item-link {
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
   overflow: hidden;
   text-decoration: none;
 }
@@ -48,11 +51,6 @@
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
-}
-
-.fade-img {
-  animation-name: fade-img;
-  animation-duration: 2s;
 }
 
 .cards-item-pic-wrap::after {

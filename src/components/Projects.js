@@ -9,18 +9,22 @@ const Projects = React.forwardRef((props, ref) => {
 
   return (
     <section className="projects" id="projects">
-        <h1>Projets personnels</h1>
-        <div className="cards-container">
-          <div className="cards-wrapper">
-            <ul className="cards-items" ref={ref}>
-              {projects.map((item, index) => {
-                return <ProjectCard project={item} key={index}  />;
-              })}
-            </ul>
-          </div>
+      <h1>Projets personnels</h1>
+      <div className="cards-container">
+        <div className="cards-wrapper">
+          <ul className="cards-items" ref={ref}>
+            {projects.map((item, index) => {
+              return (
+                <li className="cards-item" key={index}>
+                  <ProjectCard project={item} />
+                </li>
+              );
+            })}
+          </ul>
         </div>
+      </div>
     </section>
   );
-})
+});
 
 export default Projects;

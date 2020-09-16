@@ -11,10 +11,12 @@
   width: 120px;
   height: 120px;
   padding: 0 3rem;
+  opacity: 0;
 }
 
-.about-text p {
+.about-text {
   color: #fff;
+  opacity: 0;
 }
 
 
@@ -22,5 +24,9 @@
   .about-text p {
     font-size: 12px;
     font-weight: 100;
+  }
+
+  .picture {
+    padding: 0 1rem;
   }
 }

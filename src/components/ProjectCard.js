@@ -3,7 +3,6 @@ import React from 'react';
 function ProjectCard({project}) {
   return (
     <>
-      <li className='cards-item'>
         <a className='cards-item-link' href={project.link} target="_blank" rel="noopener noreferrer">
           <figure className='cards-item-pic-wrap' data-category={project.name}>
             <img
@@ -16,7 +15,6 @@ function ProjectCard({project}) {
             <h5 className='cards-item-text'>{project.description}</h5>
           </div>
         </a>
-      </li>
     </>
   );
 }

@@ -20,6 +20,7 @@ function App() {
   };
 
   useEffect(() => {
+    console.log(revealRefs);
     revealRefs.current.forEach((el, index) => {
       gsap.fromTo(
         el,
@@ -36,7 +37,7 @@ function App() {
             trigger: el,
             start: "start bottom",
             toggleActions: "play none none reverse",
-            markers: true,
+            // markers: true,
           },
         }
       );
