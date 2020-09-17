@@ -1,59 +1,89 @@
 .skills {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 4rem;
-  color: #007F68;
+  color: #172D51;
 }
 
 .skills h1 {
   text-align: center;
-  color: #007F68;
+  color: #172D51;
 }
 
 .skills-container {
+  padding: 4rem 6rem 0 4rem;
   max-width: 1120px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "titre1 css"
+    "titre1 js"
+    "titre2 php"
+    "titre2 php";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.frontend-container,
-.backend-container {
-  margin: 1rem;
+.h3-frontend {
+  grid-area: titre1;
 }
 
-.frontend-container {
-  margin-top: 2rem;
+.h3-backend {
+  grid-area: titre2;
 }
 
-.frontend-container ul,
-.backend-container ul {
-  display: flex;
-  flex-wrap: wrap;
+.css {
+  grid-area: css;
 }
 
-.frontend-container li,
-.backend-container li {
+.js {
+  grid-area: js;
+}
+
+.backend {
+  /* padding-top: 2rem; */
+  grid-area: php;
+}
+
+.skills-container ul {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+}
+
+.skills-container li {
   display: flex;
   align-items: center;
+}
+
+.skills-container li svg {
+  font-size: 40px;
   padding: 1rem;
 }
 
-.frontend-container li p,
-.backend-container li p {
-  margin: 0.5rem;
-}
-
-.frontend-container li svg,
-.backend-container li svg {
-  font-size: 40px;
-  color: #F7931E;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .skills {
-    padding:  4rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .skills-container {
+    padding: 4rem 1rem 0 1rem;
+    max-width: 1120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "titre1 css"
+      "titre1 js"
+      "titre2 php"
+      "titre2 php";
   }
 
-  .frontend-container li svg,
-  .backend-container li svg {
+  .skills-container ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills-container li svg {
     font-size: 20px;
   }
 }

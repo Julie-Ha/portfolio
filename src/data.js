@@ -70,36 +70,36 @@ export default {
       {
         id: 1,
         name: "CSS",
-        icon: <FaCss3Alt /*style={{ color: "#254BDD" }}*/ />,
+        icon: <FaCss3Alt style={{ color: "#3F7CCD" }} />,
       },
       {
         id: 2,
         name: "Sass",
-        icon: <FaSass /*style={{ color: "#C56494" }}*/ />,
+        icon: <FaSass style={{ color: "#D671BB" }} />,
       },
       {
         id: 3,
         name: "Bootstrap",
-        icon: <FaBootstrap /*style={{ color: "#563484" }}*/ />,
+        icon: <FaBootstrap style={{ color: "#8870C7" }} />,
       },
     ],
     javascript: [
       {
         id: 1,
         name: "Javascript",
-        icon: <FaJs /*style={{ color: "#EFD81D" }}*/ />,
+        icon: <FaJs style={{ color: "#FFCA66" }} />,
       },
       {
         id: 2,
         name: "React",
-        icon: <FaReact /*style={{ color: "#70D8F4" }}*/ />,
+        icon: <FaReact style={{ color: "#00C1D8" }} />,
       },
     ],
     backend: [
       {
         id: 1,
         name: "PHP",
-        icon: <FaPhp /*style={{ color: "#7377AD" }}*/ />,
+        icon: <FaPhp style={{ color: "#7377AD" }} />,
       },
       {
         id: 2,

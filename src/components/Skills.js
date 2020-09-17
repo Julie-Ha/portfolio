@@ -11,38 +11,11 @@ const Skills = React.forwardRef((props, ref) => {
       <h1>Compétences</h1>
 
       <div className="skills-container" ref={ref}>
-        <div className="frontend-container">
-          <h3>Front-end</h3>
+        <h3 className="h3-frontend">Front-end</h3>
 
-          <div className="css">
-            <ul>
-              {cssSkills.map((item, index) => {
-                return (
-                  <li key={index}>
-                    {item.icon} <p>{item.name}</p>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          <div className="js">
-            <ul>
-              {jsSkills.map((item, index) => {
-                return (
-                  <li key={index}>
-                    {item.icon} <p>{item.name}</p>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-
-        <div className="backend-container">
-          <h3>Back-end</h3>
+        <div className="css">
           <ul>
-            {backendSkills.map((item, index) => {
+            {cssSkills.map((item, index) => {
               return (
                 <li key={index}>
                   {item.icon} <p>{item.name}</p>
@@ -51,9 +24,32 @@ const Skills = React.forwardRef((props, ref) => {
             })}
           </ul>
         </div>
+
+        <div className="js">
+          <ul>
+            {jsSkills.map((item, index) => {
+              return (
+                <li key={index}>
+                  {item.icon} <p>{item.name}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        <h3 className="h3-backend">Back-end</h3>
+        <ul className="backend">
+          {backendSkills.map((item, index) => {
+            return (
+              <li key={index}>
+                {item.icon} <p>{item.name}</p>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );
-})
+});
 
 export default Skills;
