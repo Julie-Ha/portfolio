@@ -13,11 +13,6 @@ import photo from "./images/photo.png";
 import img1 from "./images/claw_machine.png";
 import img2 from "./images/image_filter.png";
 import img3 from "./images/mybooks.png";
-import drawing1 from "./images/drawings/drawing1.jpg";
-import drawing2 from "./images/drawings/drawing2.jpg";
-import drawing3 from "./images/drawings/drawing3.jpg";
-import drawing4 from "./images/drawings/drawing4.jpg";
-import drawing5 from "./images/drawings/drawing5.jpg";
 
 export default {
   about: {
@@ -30,7 +25,7 @@ export default {
         name: "Linkedin",
         icon: <AiFillLinkedin />,
         link:
-          "https://www.linkedin.com/public-profile/in/julie-hauptmann-a560501b5",
+          "https://www.linkedin.com/in/julie-hauptmann-caen/",
       },
       {
         name: "Github",
@@ -107,32 +102,5 @@ export default {
         icon: <FaSymfony />,
       },
     ],
-  },
-  drawings: [
-    {
-      id: 1,
-      name: "drawing1",
-      src: drawing1,
-    },
-    {
-      id: 2,
-      name: "drawing2",
-      src: drawing2,
-    },
-    {
-      id: 3,
-      name: "drawing3",
-      src: drawing3,
-    },
-    {
-      id: 4,
-      name: "drawing4",
-      src: drawing4,
-    },
-    {
-      id: 5,
-      name: "drawing5",
-      src: drawing5,
-    },
-  ],
+  }
 };

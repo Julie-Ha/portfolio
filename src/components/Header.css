@@ -20,9 +20,8 @@ header .banner {
 }
 
 .nav-wrap {
-  font: 12px "opensans-bold", sans-serif;
   width: 100%;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.5px; 
   z-index: 100;
   position: fixed;
   transition: 0.5s ease-out;

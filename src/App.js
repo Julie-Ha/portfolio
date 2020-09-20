@@ -5,7 +5,6 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
-// import Drawings from "./components/Drawings";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -20,7 +19,6 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(revealRefs);
     revealRefs.current.forEach((el, index) => {
       gsap.fromTo(
         el,
@@ -31,6 +29,7 @@ function App() {
           duration: 1,
           opacity: 1,
           scale: 1,
+          stagger: 0.5,
           ease: Power3.easeOut,
           scrollTrigger: {
             id: `section-${index + 1}`,
@@ -50,7 +49,6 @@ function App() {
       <About ref={addToRefs} />
       <Projects ref={addToRefs} />
       <Skills ref={addToRefs} />
-      {/* <Drawings ref={addToRefs} /> */}
       <Footer />
     </div>
   );

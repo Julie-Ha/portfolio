@@ -6,15 +6,17 @@ import "./Header.css";
 import { Link } from "react-scroll";
 import computerImg from "../images/computer.png";
 
-import { gsap, Power3, Linear, } from "gsap";
+import { gsap, Power3, Linear } from "gsap";
 
 function Header() {
   const [nav, setNav] = useState(false);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(false);
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  let logoComputer = useRef(null);
+
+  let computerIllustration = useRef(null);
   let icon1 = useRef(null);
   let icon2 = useRef(null);
   let icon3 = useRef(null);
@@ -22,7 +24,7 @@ function Header() {
   useEffect(() => {
     let tl = new gsap.timeline();
 
-    tl.to(logoComputer, {
+    tl.to(computerIllustration, {
       opacity: 1,
       scale: 1,
       duration: 1,
@@ -71,9 +73,6 @@ function Header() {
       {
         scale: 1.1,
         repeat: -1,
-        //ease: RoughEase.ease,
-        //ease: Elastic.easeOut,
-        //ease: Elastic.easeOut.config(1.75, 1),
         yoyo: true,
       }
     );
@@ -160,20 +159,6 @@ function Header() {
               Compétences
             </Link>
           </li>
-          {/* <li className="nav-item">
-            <Link
-              className="nav-link"
-              activeClass="active"
-              to="drawings"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onClick={closeMobileMenu}
-            >
-              Dessins
-            </Link>
-          </li> */}
         </ul>
       </nav>
 
@@ -182,7 +167,7 @@ function Header() {
           src={computerImg}
           alt="computer"
           className="computer-img"
-          ref={(el) => (logoComputer = el)}
+          ref={(el) => (computerIllustration = el)}
         />
         <div className="icon1" ref={(el) => (icon1 = el)}>
           <VscCode />
