@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5d776e69.chunk.css",
-    "main.js": "/portfolio/static/js/main.4fe2814b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4fe2814b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.0830c5e0.chunk.css",
+    "main.js": "/portfolio/static/js/main.ee214c0f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ee214c0f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.72fc3ab8.chunk.js": "/portfolio/static/js/2.72fc3ab8.chunk.js",
-    "static/js/2.72fc3ab8.chunk.js.map": "/portfolio/static/js/2.72fc3ab8.chunk.js.map",
+    "static/js/2.802bab82.chunk.js": "/portfolio/static/js/2.802bab82.chunk.js",
+    "static/js/2.802bab82.chunk.js.map": "/portfolio/static/js/2.802bab82.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.d9a329b2309c9d3e1e72ac9f9ab641a5.js": "/portfolio/precache-manifest.d9a329b2309c9d3e1e72ac9f9ab641a5.js",
+    "precache-manifest.08e95a34f8664c313952a4bc1eca6f4f.js": "/portfolio/precache-manifest.08e95a34f8664c313952a4bc1eca6f4f.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.5d776e69.chunk.css.map": "/portfolio/static/css/main.5d776e69.chunk.css.map",
-    "static/js/2.72fc3ab8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.72fc3ab8.chunk.js.LICENSE.txt",
+    "static/css/main.0830c5e0.chunk.css.map": "/portfolio/static/css/main.0830c5e0.chunk.css.map",
+    "static/js/2.802bab82.chunk.js.LICENSE.txt": "/portfolio/static/js/2.802bab82.chunk.js.LICENSE.txt",
     "static/media/claw_machine.png": "/portfolio/static/media/claw_machine.17430025.png",
     "static/media/computer.png": "/portfolio/static/media/computer.4c359efd.png",
     "static/media/image_filter.png": "/portfolio/static/media/image_filter.c74c7973.png",
     "static/media/mybooks.png": "/portfolio/static/media/mybooks.d343006e.png",
+    "static/media/nasa-app.png": "/portfolio/static/media/nasa-app.85b4d59c.png",
     "static/media/photo.png": "/portfolio/static/media/photo.253e3b4f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.72fc3ab8.chunk.js",
-    "static/css/main.5d776e69.chunk.css",
-    "static/js/main.4fe2814b.chunk.js"
+    "static/js/2.802bab82.chunk.js",
+    "static/css/main.0830c5e0.chunk.css",
+    "static/js/main.ee214c0f.chunk.js"
   ]
 }
