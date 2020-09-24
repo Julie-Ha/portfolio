@@ -1,6 +1,6 @@
 #about {
   padding: 5rem 2rem;
-  background-color: #146666;
+  background-color: var(--dark-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
 }
 
 .about-text {
-  color: #fff;
+  color: var(--white);
   opacity: 0;
 }
 

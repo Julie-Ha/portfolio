@@ -1,8 +1,8 @@
 footer {
-  background-color: #007F68;
+  background-color: var(--green);
   padding-top: 4rem;
   padding-bottom: 4rem;
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   text-align: center;
   position: relative;
@@ -19,7 +19,7 @@ footer {
 
 .footer-networks li svg {
   font-size: 32px;
-  color: #fff;
+  color: var(--white);
   transform: scale(1.0);
   transition: 0.3s ease-out;
 }

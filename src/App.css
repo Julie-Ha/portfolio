@@ -1,20 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+:root {
+  --green: #007f68;
+  --light-green: #2cb978;
+  --dark-green: #146666;
+  --light-orange: #f7931e;
+  --orange: #f15a24;
+  --dark-blue: #172d51;
+  --teal: #00A99D;
+  --white: #fff;
+  --black: #242222;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Cabin', sans-serif;
-    /* letter-spacing: 1px; */
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }

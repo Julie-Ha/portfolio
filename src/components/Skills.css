@@ -1,12 +1,12 @@
 .skills {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 4rem;
-  color: #172D51;
+  color: var(--dark-blue);
 }
 
 .skills h1 {
   text-align: center;
-  color: #172D51;
+  color: var(--dark-blue);
 }
 
 .skills-container {
@@ -42,7 +42,6 @@
 }
 
 .backend {
-  /* padding-top: 2rem; */
   grid-area: php;
 }
 

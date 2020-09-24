@@ -13,6 +13,7 @@ import photo from "./images/photo.png";
 import img1 from "./images/claw_machine.png";
 import img2 from "./images/image_filter.png";
 import img3 from "./images/mybooks.png";
+import img4 from "./images/nasa-app.png";
 
 export default {
   about: {
@@ -58,6 +59,14 @@ export default {
       image: img3,
       link: "",
       source: "https://github.com/Julie-Ha/MyBooks",
+    },
+    {
+      id: 4,
+      name: "Nasa App",
+      description: "Application web utilisant l'API de la NASA",
+      image: img4,
+      link: "https://julie-ha.github.io/nasa-app/",
+      source: "https://github.com/Julie-Ha/nasa-app",
     },
   ],
   skills: {

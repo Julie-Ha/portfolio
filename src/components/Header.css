@@ -28,16 +28,16 @@ header .banner {
 }
 
 .nav-wrap.active {
-  background: #007f68;
+  background: var(--green);
   transition: 0.5s ease-out;
 }
 
 .nav-wrap.active .nav-link {
-  color: #fff;
+  color: var(--white);
 }
 
 .nav-wrap.active .nav-link:hover {
-  color: #f7931e;
+  color: var(--light-orange);
 }
 
 .nav-menu {
@@ -59,12 +59,12 @@ header .banner {
   padding: 8px 13px;
   line-height: 32px;
   cursor: pointer;
-  color: #007f68;
+  color: var(--green);
   transition: 0.2s;
 }
 
 .nav-link:hover {
-  color: #f7931e;
+  color: var(--light-orange);
   transition: 0.2s;
 }
 
@@ -73,7 +73,7 @@ header .banner {
 }
 
 .icon1 {
-  color: #f7931e;
+  color: var(--light-orange);
   font-size: 50px;
   position: absolute;
   top: 20%;
@@ -84,7 +84,7 @@ header .banner {
 
 .icon2 {
   display: flex;
-  color: #00A99D;
+  color: var(--teal);
   font-size: 50px;
   position: absolute;
   top: 75%;
@@ -94,7 +94,7 @@ header .banner {
 }
 
 .icon3 {
-  color: #F15A24;
+  color: var(--orange);;
   font-size: 50px;
   position: absolute;
   top: 18%;
@@ -127,7 +127,7 @@ header .banner {
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: var(--black);
     left: 0;
     opacity: 0.98;
     transition: all 0.5s ease;
@@ -146,16 +146,16 @@ header .banner {
   }
 
   .menu-icon.dark svg {
-    color: #007f68;
+    color: var(--green);
     transition: 0.5s ease;
   }
   .menu-icon.light svg {
-    color: #fff;
+    color: var(--white);
     transition: 0.5s ease;
   }
 
   .nav-link {
-    color: #fff;
+    color: var(--white);
   }
 
   .icon1, .icon2, .icon3 {
