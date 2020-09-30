@@ -41,7 +41,7 @@ header .banner {
 }
 
 .nav-menu {
-  min-height: 48px;
+  min-height: 3rem;
   width: auto;
   text-align: center;
 }
@@ -49,13 +49,13 @@ header .banner {
 .nav-menu li {
   position: relative;
   list-style: none;
-  height: 48px;
+  height: 3rem;
   display: inline-block;
 }
 
 .nav-link {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 8px 13px;
   line-height: 32px;
   cursor: pointer;
@@ -74,7 +74,7 @@ header .banner {
 
 .icon1 {
   color: var(--light-orange);
-  font-size: 50px;
+  font-size: 3rem;
   position: absolute;
   top: 20%;
   right: 30%;
@@ -85,7 +85,7 @@ header .banner {
 .icon2 {
   display: flex;
   color: var(--teal);
-  font-size: 50px;
+  font-size: 3rem;
   position: absolute;
   top: 75%;
   right: 65%;
@@ -95,7 +95,7 @@ header .banner {
 
 .icon3 {
   color: var(--orange);;
-  font-size: 50px;
+  font-size: 3rem;
   position: absolute;
   top: 18%;
   right: 52%;
@@ -159,6 +159,10 @@ header .banner {
   }
 
   .icon1, .icon2, .icon3 {
-    font-size: 25px;
+    font-size: 2rem;
+  }
+
+  .icon1 {
+    right: 25%;
   }
 }
