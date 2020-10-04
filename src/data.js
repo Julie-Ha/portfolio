@@ -77,11 +77,6 @@ export default {
         icon: <FaCss3Alt style={{ color: "#3F7CCD" }} />,
       },
       {
-        id: 2,
-        name: "Sass",
-        icon: <FaSass style={{ color: "#D671BB" }} />,
-      },
-      {
         id: 3,
         name: "Bootstrap",
         icon: <FaBootstrap style={{ color: "#8870C7" }} />,
