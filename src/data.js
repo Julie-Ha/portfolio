@@ -2,12 +2,12 @@ import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import {
   FaCss3Alt,
-  FaSass,
   FaBootstrap,
   FaJs,
   FaReact,
   FaPhp,
   FaSymfony,
+  FaVuejs,
 } from "react-icons/fa";
 import photo from "./images/photo.png";
 import img1 from "./images/claw_machine.png";
@@ -92,6 +92,11 @@ export default {
         id: 2,
         name: "React",
         icon: <FaReact style={{ color: "#00C1D8" }} />,
+      },
+      {
+        id: 2,
+        name: "Vue.js",
+        icon: <FaVuejs style={{ color: "#2CB978" }} />,
       },
     ],
     backend: [
